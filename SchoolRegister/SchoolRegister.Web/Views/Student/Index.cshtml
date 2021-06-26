@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SchoolRegister.ViewModels.VMs.StudentVm>
+@using Microsoft.AspNetCore.Mvc.Localization;
+@inject IViewLocalizer  Localizer
+@{
+
+    ViewData["Title"] = Localizer["Students"];
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+@if (User.Identity.IsAuthenticated && (User.IsInRole("Teacher") || User.IsInRole("Admin")) )
+{
+    <h2>@Localizer["ViewStudents"]</h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <input id="students-filter-input" class="form-control" type="text" placeholder="Wprowadź filtr" />
+        </div>
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Localizer["FirstName", @Html.DisplayNameFor(model => model.FirstName)]
+            </th>
+            <th>
+                @Localizer["LastName", @Html.DisplayNameFor(model => model.LastName)]
+            </th>
+            <th>
+                @Localizer["ParentName", @Html.DisplayNameFor(model => model.ParentName)]
+            </th>
+            <th>
+                @Localizer["GroupName", @Html.DisplayNameFor(model => model.GroupName)]
+            </th>
+            <th>
+                @Localizer["AverageGrade", @Html.DisplayNameFor(model => model.AverageGrade)]
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody class="students-table-data">
+        <partial name="_StudentsTableDataPartial" model="Model"/>
+    </tbody>
+
+</table>
+

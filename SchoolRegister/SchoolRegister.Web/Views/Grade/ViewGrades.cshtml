@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@model IEnumerable<SchoolRegister.ViewModels.VMs.GradeVm>
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["ViewGrades"];
+}
+
+<h2>@Localizer["ViewGrades"]</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Localizer["SubjectName"]
+            </th>
+            <th>
+                @Localizer["Grade"]
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SubjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GradeValue)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

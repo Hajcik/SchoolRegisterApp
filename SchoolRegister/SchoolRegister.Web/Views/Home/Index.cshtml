@@ -1,0 +1,8 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization;
+@inject IViewLocalizer  Localizer
+@{
+    ViewData["Title"] = Localizer["Home"];
+}
+
+<h1>@Localizer["Welcome"]</h1>
+<h3>@Localizer["Continue"] <a asp-area="Identity" asp-page="/Account/Login">@Localizer["Login"]</a></h3>

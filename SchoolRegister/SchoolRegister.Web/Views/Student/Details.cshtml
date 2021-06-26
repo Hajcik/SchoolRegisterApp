@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer  Localizer
+@using SchoolRegister.ViewModels.VMs
+@model GradesReportVm
+
+@{
+    ViewData["Title"] = Localizer["StudentDetails"];
+}
+
+<h2>@ViewData["Title"] </h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           @Localizer["StudentFirstName", @Html.DisplayNameFor(model => model.StudentFirstName)]
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StudentFirstName)
+        </dd>
+        <dt>
+           @Localizer["StudentLastName", @Html.DisplayNameFor(model => model.StudentLastName)]
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StudentLastName)
+        </dd>
+        <dt>
+            @Localizer["ParentName", @Html.DisplayNameFor(model => model.ParentName)]
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ParentName)
+        </dd>
+        <dt>
+            @Localizer["GroupName", @Html.DisplayNameFor(model => model.GroupName)]
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GroupName)
+        </dd>
+        <dt>
+            @Localizer["AverageGrade", @Html.DisplayNameFor(model => model.AverageGrade)]
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AverageGrade)
+        </dd>
+    </dl>
+    <partial name="_GradesDetailsPartial" model="@Model.StudentGradesPerSubject" />
+</div>
+<div>
+    <a asp-action="Index">@Localizer["BacktoList"]</a>
+</div>
