@@ -39,7 +39,7 @@ Application is localized in Polish and English.
 <img align="left" alt="T-SQL" width="50px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />
 <br /><br />
 
-## Development opportunities
+# Development opportunities
 
 Repository is archivized becasue application wasn't in development since it's latest release in June 2020, and support for .NET Core 2.1 ends in August 2021.
 <br /><br />
