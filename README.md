@@ -1,6 +1,7 @@
 # School Register Application .NET Core 2.1
 
-School Register Application was made in 2020 during my time at University of Technology in Częstochowa, for <b>WWW Applications</b> course.\
+School Register Application was made in 2020 during my time at University of Technology in Częstochowa.\
+Course: <b>WWW Applications</b>
 Application is localized in Polish and English.
 
 ## Application functionality
@@ -33,9 +34,12 @@ Application is localized in Polish and English.
 <img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
 <img align="left" alt=".NET" width="26px" src="https://raw.githubusercontent.com/github/explore/93d8a67084f94b2a444e510199a6e7622e5b09a3/topics/dotnet/dotnet.png" />
 <img align="left" alt="C#" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/csharp/csharp.png" />
-<img align="left" alt="T-SQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />
+<img align="left" alt="T-SQL" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />\
 
- \
 # Development opportunities
 
-This repository is archivized because support for .NET Core 2.1 ends in August 2021, and it was left in it's current state since it's first release back in June 2020. Application is fully functional, but it can be improved in many ways. Application backend is safe, but it would be best if it was redesigned from ground up to be more secure, as developer improved in making .NET applications during following years. School Register would benefit from improving the aesthetics and ensuring the localization is correct on every page. Chat can be improved by saving messages between users, currently messages disappear after refreshing the Chat page.\
+Repository is archivized becasue application wasn't in development since it's latest release in June 2020, and support for .NET Core 2.1 ends in August 2021.
+\
+\Application is fully functional, but it can be improved in many ways. Application backend is safe, but it would be best if it was redesigned from ground up to be more secure, as developer improved in making .NET applications during following years. 
+\
+\School Register would benefit from improving the aesthetics and ensuring the localization is correct on every page. Chat can be improved by saving messages between users, currently messages disappear after refreshing the Chat page.
